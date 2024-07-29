@@ -1,0 +1,29 @@
+{% extends 'productos/base.html' %} 
+
+{% block title %}
+<title>FARMACHI - Lista de Productos</title>
+{% endblock title %}
+
+{% block main %}
+    <h2 style="color: bisque">Listado de Productos</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Código</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for producto in productos %}
+            <tr>
+                <td>{{ producto.nombre }}</td>
+                <td>{{ producto.codigo }}</td>
+                <td>{{ producto.cantidad }}</td>
+                <td>${{ producto.precio }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock main %}

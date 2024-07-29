@@ -1,0 +1,18 @@
+{% extends 'productos/base.html' %} 
+
+{% block title %}
+<title>FARMACHI - Agregar Producto</title>
+{% endblock title %}
+
+{% block main %}
+    <form action="" method="POST">
+        {% csrf_token %}
+
+        <table class="table">
+            {{ mi_formulario.as_table }}
+        </table>
+        <input class="button" type="submit" value="Enviar">
+
+    </form>
+{% endblock main %}
+

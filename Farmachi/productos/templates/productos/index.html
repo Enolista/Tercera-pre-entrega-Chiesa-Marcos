@@ -1,0 +1,39 @@
+{% extends 'productos/base.html' %}
+{% load static %}
+
+{% block title  %}
+<title>FARMACHI- Inicio</title>
+{% endblock title  %}
+
+{% block main  %}
+<section class="page-section clearfix">
+    <div class="container">
+        <div class="intro">
+            <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'productos/assets/img/intro.jpg' %}" alt="..." />
+            <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                <h2 class="section-heading mb-4">
+                    <span class="section-heading-upper">FARMACIA DE CONFIANZA</span>
+                    <span class="section-heading-lower">CUÍDATE CON LO MEJOR</span>
+                </h2>
+                <p class="mb-3">Cada producto en nuestra farmacia está seleccionado cuidadosamente para asegurar tu bienestar. Utilizamos ingredientes de alta calidad, provenientes de fuentes confiables. Una vez que pruebes nuestros productos, sentirás la diferencia en tu salud diaria, ¡te lo garantizamos!</p>
+                <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl" href="{% url 'ListaProductos' %}">Mirar nuestro productos</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="page-section cta">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 mx-auto">
+                <div class="cta-inner bg-faded text-center rounded">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-upper">NUESTRA PROMESA</span>
+                        <span class="section-heading-lower">PARA VOS</span>
+                    </h2>
+                    <p class="mb-0">Cuando entras a nuestra farmacia, nos dedicamos a ofrecerte un servicio amigable, un ambiente acogedor y, sobre todo, productos de los mejores laboratorios y certificados por nuestros farmaceuticos expertos. Si no estás satisfecho, por favor háznoslo saber y haremos todo lo posible para solucionar cualquier inconveniente.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock main  %}

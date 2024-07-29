@@ -1,0 +1,17 @@
+{% extends 'productos/base.html' %} 
+
+{% block title %}
+<title>FARMACHI - Buscar Vendedores</title>
+{% endblock title %}
+
+{% block main %}
+    <h2 style="color: bisque">Busqueda de Vendedores</h2>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <table class="table">
+            {{ mi_formulario.as_table }}
+        </table>
+        <input class="input" type="submit" value="Enviar">
+
+    </form>
+{% endblock main %}
