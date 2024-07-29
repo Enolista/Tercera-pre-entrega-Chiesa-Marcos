@@ -19,6 +19,6 @@
    * *Vendedores por apellido*
    * *Clientes por apellido*
 5. **Readme que indique el orden en el que se prueban las cosas y/o donde están las funcionalidades.**
-   1.*Utilizar la app de productos*
+   1. *Utilizar la app de productos*
    2. *Agregar uno o mas productos, Vendedor y cliente*
    3. *Buscar cada uno de los agregados a la BD*
